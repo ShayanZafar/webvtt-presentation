@@ -1,99 +1,175 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=1024" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <title>
-    WebVTT Demo
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>WebVTT Demo
   </title>
 
 
-  <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
-  <link href="css/impress-demo.css" rel="stylesheet" />
+    <link href="css/impress-demo.css" rel="stylesheet" />
 
-  <link rel="shortcut icon" href="favicon.png" />
-  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
 
 <body class="impress-not-supported">
 
-  <div class="fallback-message">
-    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
-    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
-  </div>
-
-  <div id="impress">
-
-    <div class="step slide" data-x="-1000" data-y="-1500">
-       <h1>Introduction: WebVTT Developers at Seneca College</h1>
-        
-
-        <h5>Names of Contributers:</h5>
-        <ul>
-            <li></li>
-        </ul>
-
+    <div class="fallback-message">
+        <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
+        <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
     </div>
+    <!-- Slide 1 -->
+    <div id="impress">
 
-    <div class="step slide" data-x="0" data-y="-1500">
-        <q><b>What is WebVTT? Its' Purpose? Need?</b></q>
+        <div class="step slide" data-x="-1000" data-y="-1500">
+            <h1 id="title">Introduction: WebVTT Developers at Seneca College</h1>
 
-        <ul>
-            <li>Web Video Text Tracks</li>
-            <li>Format Intended for marking up text track resources</li>
-        </ul>
-    </div>
+            <q> Ralph Gilles: "Do WebVTT!"</q>
 
-    <div class="step slide" data-x="1000" data-y="-1500">
-        <q>WebVTT in Action: Demo</q>
-        <br />
-        <div class="center">
-          <video src="media/demo.webm" controls>
-            <track kind="subtitles" src="captions/demo.vtt" default />
-          </video>
+            <h5>Names of Contributers:</h5>
+            <ul>
+                <li></li>
+            </ul>
+
         </div>
-    </div>
-    <div class="step slide" data-x="2000" data-y="-1500">
-        <q><b>Under The Hood: WebVTT File</b></q>
-        <p>3 Webvtt files embedded here: (as images?)</p>
+        <!-- Slide 2 -->
+        <div class="step slide" data-x="0" data-y="-1500">
+            <h1>What is WebVTT? Its' Purpose? Need?</h1>
 
-        <img src="images/vtt-structure.JPG" />
-    </div>
+            <ul>
+                <li>What: 
+                    <ul>
+                        <li>WebVTT: <i>Web Video Text Tracks</i></li>
+                        <li>Format Intended for marking up Text-Track Resources</li>
+                    </ul>
+                </li>
+                <li>Need:
+                    <ul>
+                        <li>Web Standard for Captions and Subtitles</li>
+                        <li>Simplicity: Author a WebVTT file and Link using HTML5 <b>track</b></li>
+                        <li>Video Content Navigation: Chapter Markers</li>
+                        <li>Audio Text Descriptions for Visually Impaired Individuals</li>
+                        <li>Subtitles can be <i>Formatted</i></li>
+                        <li>International Language Support using <b>UTF-8</b></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- Slide 3 -->
+        <div class="step slide" data-x="1000" data-y="-1500">
+            <q>WebVTT in Action: Demo</q>
+            <br />
+            <div class="center">
+                <video src="media/demo.webm" controls>
+                <track kind="subtitles" src="captions/demo.vtt" default />
+                </video>
+            </div>
+        </div>
+        <!-- Slide 4 -->
+        <div class="step slide" data-x="2000" data-y="-1500">
+            <q><b>Under The Hood: WebVTT File</b></q>
+            <p>3 Webvtt files embedded here: (as images?)</p>
 
-    <div class="step slide" data-x="3000" data-y="-1500">
-        <q><b>Tying it in to The Web Platform...</b></q>
-    </div>
+            <img src="images/vtt-structure.JPG" />
+        </div>
+        <!-- Slide 5 -->
+        <div class="step slide" data-x="3000" data-y="-1500">
+            <h1>WebVTT File in Action!</h1>
+            <div class="center">
+                <img src="images/brazilian-caption.JPG" />
+                <img src="images/viva-brazil.JPG" />
+            </div>
 
-    <div class="step slide" data-x="4000" data-y="-1500">
-        <q><b>DOM API: JavaScript</b></q>
-    </div>
-      <div class="step slide" data-x="5000" data-y="-1500">
-        <q><b>Implementing the Standard: Backstory, Challenges, Triumphs...</b></q>
-    </div>
+        </div>
+           <!-- Slide 5 -->
+        <div class="step slide" data-x="4000" data-y="-1500">
+            <h1>Stylin' WebVTT Cue-Text: CSS</h1>
+          <h3>Example of a styled VTT file and accompanying video example(screenshot)</h3>
+            <img src="images/vtt-styled.JPG" />
 
-    <div class="step slide" data-x="6000" data-y="-1500">
-        <q><b>Open-Source Software Development as a Student</b></q>
-    </div>
+        </div>
+        <!-- Slide 6 -->
+        <div class="step slide" data-x="5000" data-y="-1500">
+            <h1>DOM API: JavaScript & HTML5 track element</h1>
+            <h3>Information from the <b>Track</b> Element can be used on Client-Side:</h3>
 
-    <div class="step slide" data-x="7000" data-y="-1500">
-        <q>Future Direction of WebVTT</q>
-    </div>
-    <div class="step slide" data-x="8000" data-y="-1500">
-        <q><b>Concluding Statements on WebVTT</b></q>
-    </div>
+            <ul>
+                <li><b>TrackElement:</b> allows authors to specify explicit external timed text tracks for media elements</li>
+                <li><b>TextTrack:</b></li>
+                <li><b>TextTrackCue: is the unit of time-sensitive data in a text track </b></li>
+            </ul>
 
-    <div class="step slide" data-x="9000" data-y="-1500">
-        <q><b>Special Thanks</b></q>
-    </div>
+        </div>
+        <!-- Slide 7 -->
+        <div class="step slide" data-x="6000" data-y="-1500">
+            <h1>Implementing the Standard: Process of Development</h1>
+            <ul>
+                <li> General:
+                <ul>
+                    <li>Starting with Toy Parser and building on top of it</li>
+                    <li>Gecko Work In Progress Patch: 1 Year <b>Out of Date</b></li>
+                    <li>Parallel Development (Parser, Build, Media Element, Track/DOM Bindings)</li>
+                    <li>Cross-Platform Development (Linux, Max OS, Windows)</li>
+                </ul>
+                </li>
+                <li>Specification:
+                    <ul>
+                        <li>WebKit "bakes" the Parser on the Web Browser</li>
+                        <li>The Need for a Stand-alone C Library</li>
+                        <li>The Use of Callback Functions</li>
+                        <li>Potential to be used as a Validator and Parser</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- Slide 8 -->
+        <div class="step slide" data-x="7000" data-y="-1500">
+            <h1>Open-Source Software Development as a Student - Challenges</h1>
+            <ul>
+                <li>A Unique Course & Experience (IRC, bugzilla, MXR, self-learning,)</li>
+                <li>Implementing and Understanding the WebVTT Specification</li>
+                <li>Code Reviews and Working with Mozilla Devs (r+)</li>
+                <li>Unit Testing (GoogleTest, MochiTests, nodeffi, ctypes, TravisCI, ValGrind)</li>
+                <li>Using Git and GitHub</li>
+                <li></li>
+            </ul>
+        </div>
+        <!-- Slide 9 -->
+        <div class="step slide" data-x="8000" data-y="-1500">
+            <q>Future Direction of WebVTT</q>
+        </div>
+        <!-- Slide 10 -->
+        <div class="step slide" data-x="9000" data-y="-1500">
+            <h1>Concluding Statements on WebVTT</h1>
+            <ul>
+                <li>Implemented on most Web Browsers as a Web Standard</li>
+                <li>Provides Simplicity in adding Subtitles & Captions</li>
+                <li>Integrates into the Web Platform: (HTML5, CSS, JavaScript)</li>
+                <li>Supports Video Content Navigation by Cue ID</li>
+                <li>Supports Intenational Languages and <b>UTF-8</b></li>
+            </ul>
+        </div>
+        <!-- Slide 11 -->
+        <div class="step slide" data-x="10000" data-y="-1500">
+            <h1>Special Thanks</h1>
+            <ul>
+                <li>Ralph Gilles</li>
+                <li>Mozilla Community</li>
+                <li>David Humphrey</li>
+            </ul>
+        </div>
+        <!-- Slide 12 -->
+        <div class="step slide" data-x="11000" data-y="-1500">
+            <h1>The End! - References</h1>
+            <a href="HTTP://dev.w3.org/html5/webvtt/">http://dev.w3.org/html5/webvtt/</a>
+        </div>
 
-    <div class="step slide" data-x="10000" data-y="-1500">
-        <q><b>The End! - References</b></q>
-    </div>
 
-
-    <!--
+        <!--
         
         So to make a summary of all the possible attributes used to position presentation steps, we have:
         
@@ -108,8 +184,8 @@
         CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
         
       -->
-      <div id="overview" class="step" data-x="0" data-y="-1000" data-scale="4">
-      </div>
+        <div id="overview" class="step" data-x="0" data-y="-1000" data-scale="4">
+        </div>
 
     </div>
 
@@ -117,6 +193,6 @@
     <script>impress().init();</script>
 
 
-  </body>
-  </html>
+</body>
+</html>
 
