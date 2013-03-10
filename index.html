@@ -1,30 +1,30 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=1024" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>
-        WebVTT Demo
-    </title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=1024" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <title>
+    WebVTT Demo
+  </title>
 
 
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
-    <link href="css/impress-demo.css" rel="stylesheet" />
-    
-    <link rel="shortcut icon" href="favicon.png" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link href="css/impress-demo.css" rel="stylesheet" />
+
+  <link rel="shortcut icon" href="favicon.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
 </head>
 
 <body class="impress-not-supported">
 
-<div class="fallback-message">
+  <div class="fallback-message">
     <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.</p>
     <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
-</div>
+  </div>
 
-<div id="impress">
+  <div id="impress">
 
     <div class="step slide" data-x="-1000" data-y="-1500">
        <h1>Introduction: WebVTT Developers at Seneca College</h1>
@@ -48,7 +48,12 @@
 
     <div class="step slide" data-x="1000" data-y="-1500">
         <q>WebVTT in Action: Demo</q>
-        <p>Video embedded here?</p>
+        <br />
+        <div class="center">
+          <video src="media/demo.webm" controls>
+            <track kind="subtitles" src="captions/demo.vtt" default />
+          </video>
+        </div>
     </div>
     <div class="step slide" data-x="2000" data-y="-1500">
         <q><b>Under The Hood: WebVTT File</b></q>
@@ -102,16 +107,16 @@
         These values are used by impress.js in CSS transformation functions, so for more information consult
         CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
         
-    -->
-    <div id="overview" class="step" data-x="0" data-y="-1000" data-scale="4">
+      -->
+      <div id="overview" class="step" data-x="0" data-y="-1000" data-scale="4">
+      </div>
+
     </div>
 
-</div>
-
-<script src="js/impress.js"></script>
-<script>impress().init();</script>
+    <script src="js/impress.js"></script>
+    <script>impress().init();</script>
 
 
-</body>
-</html>
+  </body>
+  </html>
 
