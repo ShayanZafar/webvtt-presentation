@@ -227,16 +227,30 @@
       letter-spacing: -1px;
     }
 
+    .slide h1 {
+      display: block;
+
+    }
+
+    .slide .header {
+      margin-bottom: 1em;
+    }
+
     .slide q {
       display: block;
       font-size: 50px;
       line-height: 72px;
-
-      margin-top: 100px;
     }
 
-    .slide q strong {
-      white-space: nowrap;
+      .slide q strong {
+        white-space: nowrap;
+      }
+
+    .slide span.sub-header {
+      font-style: italic;
+      font-size: smaller;
+      margin-left: 1em;
+      display: block;
     }
 
     .slide .center {
@@ -245,6 +259,21 @@
 
     .slide video {
       max-height: 400px;
+    }
+
+    .slide ul {
+      margin-left:2em;
+      
+    }
+
+      .slide ul li {
+        list-style: disc outside;
+      }
+
+    .slide span.webvtt {
+      display: block;
+      font-family: monospace;
+      font-size: 22px;
     }
 
 /*
