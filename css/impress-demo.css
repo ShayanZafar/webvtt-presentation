@@ -264,7 +264,8 @@
     }
 
     .slide ul {
-      margin-left:2em;
+      margin-left: 2em;
+      margin-bottom: 1em;
       
     }
 
@@ -280,6 +281,9 @@
       display: block;
       font-family: monospace;
       font-size: 22px;
+      margin: 0 auto;
+      width: 450px;
+      line-height: 1.1em;
     }
 q{
     color:black;
