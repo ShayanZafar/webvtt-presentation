@@ -252,7 +252,9 @@
       margin-left: 1em;
       display: block;
     }
-
+        .slide span.bracketed-text{
+            font-size:18px;
+        }
     .slide .center {
       text-align: center;
     }
@@ -267,8 +269,12 @@
     }
 
       .slide ul li {
-        list-style: disc outside;
+        list-style: square outside;
       }
+
+ ul .outer{
+   list-style:none;
+  }
 
     .slide span.webvtt {
       display: block;
