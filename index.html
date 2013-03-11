@@ -26,7 +26,7 @@
         <div class="step slide" data-x="-1000" data-y="-1500">
             <div class="header">
                 <q>Introduction</q>
-                <span class="sub-header">WebVTT Developers at Seneca College</span>
+                <span class="sub-header">WebVTT Developers at <span style="font-weight:700;color:#C11B17">Seneca College @ York University</span></span>
             </div>
             <b>Ralph Gilles: "Do WebVTT!"</b>
         </div>
@@ -37,17 +37,17 @@
                 <span class="sub-header">Its' Purpose? Need?</span>
             </div>
 
-            <h1>What:</h1>
+            <h1>What:</h1>  <br />
             <ul>
                 <li>WebVTT: <i>Web Video Text Tracks</i></li>
                 <li>Format Intended for marking up Text-Track Resources</li>
             </ul>
-            <h1>Need:</h1>
+            <h1>Need:</h1>  <br />
             <ul>
                 <li>Web Standard for Captions and Subtitles</li>
-                <li>Simplicity: Author a WebVTT file and Link using HTML5 <b>track</b></li>
+                <li>Simplicity: Author a WebVTT file and Link with <b>Track</b></li>
                 <li>Video Content Navigation: Chapter Markers</li>
-                <li>Audio Text Descriptions for Visually Impaired Individuals</li>
+                <li>Audio Text Descriptions for the Visually Impaired</li>
                 <li>Subtitles can be <i>Formatted</i></li>
                 <li>International Language Support using <b>UTF-8</b></li>
             </ul>
@@ -69,14 +69,16 @@
         <div class="step slide" data-x="2000" data-y="-1500">
             <div class="header">
                 <q>Under The Hood: WebVTT File</q>
+                <span class="sub-header">WebVTT File Structure</span>
             </div>
-            <span class="sub-header">WebVTT File Structure</span>
+            <h1>A WebVTT File <span class="bracketed-text">(some-file.vtt)</span></h1>
             <img src="images/vtt-structure.JPG" />
         </div>
         <!-- Slide 5 -->
         <div class="step slide" data-x="3000" data-y="-1500">
             <div class="header">
                 <q>WebVTT File in Action!</q>
+                <span class="sub-header">WebVTT File and Screenshot of Rendering on Video</span>
             </div>
             <span class="webvtt">WEBVTT<br />
                 <br />
@@ -89,7 +91,7 @@
                 <img src="images/viva-brazil.JPG" />
             </div>
         </div>
-        <!-- Slide 5 -->
+        <!-- Slide 6 -->
         <div class="step slide" data-x="4000" data-y="-1500">
             <div class="header">
                 <q>Stylin' WebVTT Cue-Text: CSS</q>
@@ -105,31 +107,33 @@
                 <img src="images/viva-brazil-bold.JPG" alt="Image with bold and italic" />
             </div>
         </div>
-        <!-- Slide 6 -->
+        <!-- Slide 7 -->
         <div class="step slide" data-x="5000" data-y="-1500">
-            <h1>DOM API: JavaScript & HTML5 track element</h1>
-            <h3>Information from the <b>Track</b> Element can be used on Client-Side:</h3>
-
+            <div class="header">
+                <q>Track element in JavaScript</q>
+                <span class="sub-header">DOM API provides facilities to manipulate Information from Track Element</span>
+            </div>
+            <h1>WebIDL Objects:</h1>  <br />
             <ul>
                 <li><b>TrackElement:</b> allows authors to specify explicit external timed text tracks for media elements</li>
                 <li><b>TextTrack:</b></li>
                 <li><b>TextTrackCue: is the unit of time-sensitive data in a text track </b></li>
             </ul>
         </div>
-        <!-- Slide 7 -->
+        <!-- Slide 8 -->
         <div class="step slide" data-x="6000" data-y="-1500">
             <div class="header">
                 <q>Implementing the Standard</q>
                 <span class="sub-header">Process of Development</span>
             </div>
-            <h1>General:</h1>
+            <h1>General:</h1>  <br />
             <ul>
                 <li>Starting with Toy Parser and building on top</li>
                 <li>Gecko Work In Progress Patch: 1 Year <b>Out of Date</b></li>
                 <li>Parallel Development <span class="bracketed-text">(Parser, Build, Media Element, Track/DOM Bindings)</span></li>
                 <li>Cross-Platform Development <span class="bracketed-text">(Linux, Max OS, Windows)</span></li>
             </ul>
-            <h1>Specification:</h1>
+            <h1>Specification:</h1>  <br />
             <ul>
                 <li>WebKit "bakes" the Parser on the Web Browser</li>
                 <li>The Need for a Stand-alone C Library</li>
@@ -137,12 +141,13 @@
                 <li>Potential to be used as a Validator and Parser</li>
             </ul>
         </div>
-        <!-- Slide 8 -->
+        <!-- Slide 9 -->
         <div class="step slide" data-x="7000" data-y="-1500">
             <div class="header">
                 <q>Open-Source Development</q>
                 <span class="sub-header">The challenges of being a student</span>
             </div>
+            <h1>Our Experience:</h1>  <br />
             <ul>
                 <li>A Unique Course & Experience <span class="bracketed-text">(IRC, bugzilla, MXR, self-learning)</span></li>
                 <li>Implementing and Understanding the WebVTT Specification</li>
@@ -151,26 +156,44 @@
                 <li>Using Git and GitHub</li>
             </ul>
         </div>
-        <!-- Slide 9 -->
+        <!-- Slide 10 -->
         <div class="step slide" data-x="8000" data-y="-1500">
             <div class="header">
-                <q>Future Direction of WebVTT</q>
+                <q>WebVTT in the Future</q><br>
+                <h1>Firefox Implementation:</h1>  <br />
+                <ul>
+                    <li>Used as a stand-alone library</li>
+                    <li>Integrated to Firefox build</li>
+                    <li>Documentated library to facilitate usability</li>
+                </ul>
+
+                <h1>Technology:</h1>  <br />
+                <ul>
+                    <li>Native support to subtitles</li>
+                    <li>Assistive technology to hearing-impaired users</li>
+                    <li>Live web transmissions</li>
+                    <li>More creative web environment</li>
+                </ul>
+
+
             </div>
         </div>
-        <!-- Slide 10 -->
+        <!-- Slide 11 -->
         <div class="step slide" data-x="9000" data-y="-1500">
             <div class="header">
-                <q>Concluding Statements on WebVTT</q>
+                <q>Concluding Statements: WebVTT</q>
             </div>
+            <h1>WebVTT will...</h1>
+            <br />
             <ul>
-                <li>Implemented on most Web Browsers as a Web Standard</li>
-                <li>Provides Simplicity in adding Subtitles & Captions</li>
-                <li>Integrates into the Web Platform: <span class="bracketed-text">(HTML5, CSS, JavaScript)</span></li>
+                <li>Implemented on <u>all</u> Web Browsers as a Web Standard</li>
+                <li>Provide Simplicity in adding Subtitles & Captions</li>
+                <li>Integrated into the Web Platform: <span class="bracketed-text">(HTML5, CSS, JavaScript)</span></li>
                 <li>Supports Video Content Navigation by Cue ID</li>
                 <li>Supports Intenational Languages and <b>UTF-8</b></li>
             </ul>
         </div>
-        <!-- Slide 11 -->
+        <!-- Slide 12 -->
         <div class="step slide" data-x="10000" data-y="-1500">
             <div class="header">
                 <q>Special Thanks</q>
@@ -194,7 +217,7 @@
                 <li>Contributor G</li>
             </ul>
         </div>
-        <!-- Slide 12 -->
+        <!-- Slide 13 -->
         <div class="step slide" data-x="11000" data-y="-1500">
             <div class="header">
                 <q>The End</q>

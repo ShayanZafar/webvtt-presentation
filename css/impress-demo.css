@@ -281,7 +281,15 @@
       font-family: monospace;
       font-size: 22px;
     }
-
+q{
+    color:black;
+    font-weight:bold;
+}
+h1{
+    color:#0A158E;
+    font-weight:700;
+    font-size:30px;
+}
 /*
     And now we start to style each step separately.
 
